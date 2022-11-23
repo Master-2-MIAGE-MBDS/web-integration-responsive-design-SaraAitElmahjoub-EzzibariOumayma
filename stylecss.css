@@ -1,0 +1,108 @@
+body{
+    margin: 0%;
+}
+
+.nav{
+    background-color: dodgerblue;
+    color: aliceblue;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;   
+    font-size: x-large;
+}
+.item-img{
+    grid-area: header;
+    margin-top: 50px;
+    width: 170px;
+}
+
+.item-titre{
+grid-area: body; 
+margin-top: 26px;
+font-family: serif;
+text-align: center; 
+}
+
+.item-description{
+    grid-area: footer;  
+    text-align: center;
+    margin-top: 0px;  
+    margin-bottom: 70px; 
+    font-family: system-ui;
+}
+
+.header{
+       display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-row: auto;
+        grid-template-areas: 
+            ". header ."
+            ". body ."
+            ". footer .";
+        justify-content: center;
+    
+        background-color:rgba(189, 201, 214, 0.53);  
+        margin-bottom: 20px;
+        height: 50vh;
+}
+
+.header img{
+    border-radius: 70%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item-username {
+    grid-area: header;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    border: white;
+    background-color:rgba(189, 201, 214, 0.276); 
+}
+.item-password{
+    grid-area: body;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 8px;
+    border: white;
+    background-color:rgba(189, 201, 214, 0.276); 
+}
+.button{
+    grid-area: footer;
+    background-color: dodgerblue;
+    color: aliceblue; 
+    margin-top: 30px;
+    margin-bottom: 100px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-color: aliceblue;
+    border-radius: 5px;    
+    font-size: medium;
+}
+.item-body{    
+   display:grid;
+   grid-template-columns: 20% auto 20%;
+   grid-template-rows: auto;
+   grid-template-areas:
+            ". header ."
+             ". body ."
+             ". footer ."
+   ;
+   row-gap: 20px;
+   
+} 
+.footer{
+    background-color:  dodgerblue;
+    color: aliceblue;
+        
+   
+    width: 100%; 
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3px;
+    width: 100%;
+}

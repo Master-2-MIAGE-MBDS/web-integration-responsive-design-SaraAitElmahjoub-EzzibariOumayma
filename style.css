@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(189, 186, 186, 0.61);
+    overflow-x: hidden;
+}
+.ad-container{
+    
+    width: 100%;
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: LEFT;
+ 
+}
+.ad-container .choice-header{
+ 
+    text-align: center;
+    display: flex;
+  
+    justify-content: space-around;
+    
+}
+
+.container{
+    width: 100%;
+    margin-top: 20px;
+    background-color: beige;
+    display: flex;
+    
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.bod{
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.container .image img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .image{
+    flex-basis: 40%;
+}
+
+.text{
+    width: 100%;
+    padding: 10px;
+}
+
+.container .text .date-price{
+    display : grid;
+    grid-template-columns: 90% auto 80%;
+    grid-template-rows: auto;
+    grid-template-areas: "date . prix";
+}
+@media screen and (max-width:768px) {
+    .container .text .date-price{
+        display : grid;
+        grid-template-columns: 70% auto 30%;
+     
+    }
+    .container{
+        
+     
+        border-radius: 10px;
+    }
+    .container .image{
+        flex-basis: 50%;
+    }
+    
+}
+
+
+.container .text .date-price .date{
+    font-size: 10px;
+    color: slategray;
+   
+
+}
+.title-desc p{
+    font-size: 14px;
+    color: slategray;
+}
+.container .text .date-price .prix{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+
+}
+footer{
+    background-color:  dodgerblue;
+    color: aliceblue;
+        
+   
+    width: 100%; 
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3px;
+    width: 100%;
+   font-weight: lighter;
+   font-size: 14px;
+  
+}
